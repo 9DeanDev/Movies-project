@@ -1,0 +1,104 @@
+.swiper {
+    position: relative;
+    margin-top: 35px;
+
+    .img {
+        height: auto;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+
+        background-image: url();
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.5s linear;
+        }
+    }
+
+    .title {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        font-weight: bold;
+    }
+
+    .type {
+        position: absolute;
+        bottom: 20px;
+        left: 10px
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+
+        .icon {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .title {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .type {
+        position: absolute;
+        bottom: 20px;
+        left: 10px
+    }
+
+    .swiper {
+        .btn {
+            bottom: 25px;
+
+            .icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    .title {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .type {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        font-size: 8px;
+    }
+
+    .swiper {
+        .btn {
+            bottom: 25px;
+
+            .icon {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+}
