@@ -1,3 +1,4 @@
+import ContainerHome from '../../components/BannerHome'
 import ContainerSlideFilm from '../../components/ContainerSlideFilm'
 
 type Props = {}
@@ -5,6 +6,10 @@ type Props = {}
 export default function PopularPage({ }: Props) {
 
     return (
-        <ContainerSlideFilm title="Popular Movies" url1="/popular" />
+        <>
+            <ContainerHome />
+            <ContainerSlideFilm title="Popular Movies" url1="/popular" />
+        </>
+
     )
 }

@@ -16,7 +16,7 @@ export default function Nav({ }: Props) {
             <NavChild url='/popular' icon={<FaFireAlt size='20px' />} title='Trending' />
             <NavChild url='/explore' icon={<FaRegCompass size='20px' />} title='Explore' />
             <NavChild url='/top_rated' icon={<PiTelevisionSimpleBold size='20px' />} title='Top Rated' />
-            <NavChild url='' icon={<FaRegHeart size='20px' />} title='Movies' />
+            <NavChild url='/movie' icon={<FaRegHeart size='20px' />} title='Movies' />
         </div>
     )
 }

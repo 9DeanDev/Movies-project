@@ -5,6 +5,7 @@ import HomePage from './pages/Home';
 import PopularPage from './pages/Popular';
 import Top_Rated from './pages/TopRated';
 import ExplorePage from './pages/Explore';
+import DetailsMovie from './pages/DetailsMovie';
 function App() {
   const router = createBrowserRouter([
     {
@@ -26,6 +27,14 @@ function App() {
         {
           path: '/top_rated',
           element: <Top_Rated />,
+        },
+        {
+          path: '/movie',
+          element: <DetailsMovie />,
+        },
+        {
+          path: '/movie/:id',
+          element: <DetailsMovie />,
         },
       ],
     }

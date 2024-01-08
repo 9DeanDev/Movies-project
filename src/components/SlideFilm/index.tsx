@@ -9,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Link } from 'react-router-dom';
 
 
 type Props = {
@@ -49,29 +50,29 @@ export default function SlideFilm({ url }: Props) {
                     slidesPerView: 4,
                     spaceBetween: 20
                 },
-            }}
-        >
+            }}>
             {data.map((item: any, index: any) => {
                 const thumb = `https://www.themoviedb.org/t/p/w220_and_h330_face${item.poster_path}`
                 return (
                     <SwiperSlide>
-                        <div className={`${styles.swiper}`}>
-                            <div className={styles.img} >
+                        <Link to={`/movie/${item.id}`}>
+                            <div className={`${styles.swiper}`}>
+                                <div className={styles.img} >
 
+                                </div>
+                                <img src={thumb} />
+                                <h3 className={`${styles.title}`}>
+                                    {
+                                        item.title
+                                    }
+                                </h3>
+                                <span className={styles.type}>action</span>
+                                <a href="" className={styles.btn}>
+                                    <FaPlayCircle className={styles.icon} />
+                                </a>
                             </div>
-                            <img src={thumb} />
-                            <h3 className={`${styles.title}`}>
-                                {
-                                    item.title
-                                }
-                            </h3>
-                            <span className={styles.type}>action</span>
-                            <a href="" className={styles.btn}>
-                                <FaPlayCircle className={styles.icon} />
-                            </a>
-                        </div>
+                        </Link>
                     </SwiperSlide>
-
                 )
             })}
         </Swiper>

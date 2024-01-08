@@ -1,0 +1,39 @@
+.container {
+    width: 95%;
+    max-width: 1060px;
+    margin: 50px auto;
+    font-size: 16px;
+    display: flex;
+    gap: 16px;
+
+    .img {
+        flex: 2;
+        border-radius: 8px;
+        object-fit: contain;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex: 5;
+
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 auto 0 0;
+            color: orange;
+        }
+
+        .overview {
+            font-weight: 300;
+        }
+    }
+}
